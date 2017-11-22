@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1511358009306" name="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl" uri="geohive.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511358009306" name="https://raw.githubusercontent.com/bhargavpanth/OWL/master/geo_gov.owl" uri="geo_gov.owl"/>
+    </group>
+</catalog>
