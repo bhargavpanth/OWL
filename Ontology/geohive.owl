@@ -64,20 +64,28 @@
 
     <!-- https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#hasArea -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#hasArea"/>
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#hasArea">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#hasDensity -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#hasDensity"/>
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#hasDensity">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#name -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#name">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#council"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#country"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#government"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -143,7 +151,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Antrim_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
-        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3046</hasArea>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3046.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">202.9</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -152,6 +161,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Armagh_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1326.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">131.8</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -160,6 +171,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Carlow_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">897.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.8</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -168,6 +181,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Cavan_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1932.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.7</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -176,6 +191,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Clare_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3450.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">33.8</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -193,6 +210,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Cork_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7500.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">69.0</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -201,6 +220,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Donegal_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4861.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.9</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -209,6 +230,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Down_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2466.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">215.6</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -226,6 +249,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Dublin_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">922.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1380.8</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -234,6 +259,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Fermanagh_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1691.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.1</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -251,6 +278,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Galway_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6149.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.7</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -268,6 +297,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Kerry_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4807.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.1</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -276,6 +307,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Kildare_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1695.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">124.1</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -284,6 +317,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Kilkenny_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2073.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.0</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -292,6 +327,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Laois_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1720.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.8</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -300,6 +337,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Leitrim_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1590.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.9</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -317,6 +356,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Limerick_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2756.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">69.4</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -325,6 +366,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Londonderry_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2075.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">119.1</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -333,6 +376,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Longford_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1091.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.7</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -341,6 +386,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Louth_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">826.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">148.7</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -349,6 +396,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Mayo_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5586.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.3</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -357,6 +406,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Meath_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2342.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">78.6</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -365,6 +416,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Monaghan_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1295.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.7</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -373,6 +426,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Offaly_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2001.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">38.3</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -381,6 +436,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Roscommon_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2548.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -389,6 +446,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Sligo_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1838.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.5</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -397,6 +456,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Tipperary_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4305.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.8</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -405,6 +466,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Tyrone_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3263.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">54.5</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -413,6 +476,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Waterford_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1857.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.2</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -421,6 +486,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Westmeath_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1840.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.7</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -429,6 +496,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Wexford_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2367.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.2</hasDensity>
     </owl:NamedIndividual>
     
 
@@ -437,10 +506,12 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#Wicklow_County">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/bhargavpanth/OWL/master/Ontology/geohive.owl#county"/>
+        <hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2027.0</hasArea>
+        <hasDensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">67.4</hasDensity>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
